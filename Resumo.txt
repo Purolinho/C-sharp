@@ -17,7 +17,81 @@ Isso se chama Type Casting e tem a função de mudar o tipo da variável
 
 Em C# exite duas maneiras de fazer isso:
 
+-----------------------------------------------------------------------------------------
 Maneira implicta(automatica)
+Converte do menor pro maior
 char -> int -> long -> float -> double
 
-edanuededededednverting a larger type to a smaller size typedouble -> float -> long -> int -> char
+Ex: int myInt = 9;
+double myDouble = myInt;       // Automaticamente faz com que o int se torne double
+
+Console.WriteLine(myInt);      // sobrepoe 9
+Console.WriteLine(myDouble);   // sobrepoe 9
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Maneira explicita(manual)
+Converte do maior pro menos
+double -> float -> long -> int -> char
+
+Ex: double myDouble = 9.78;
+    int myInt = (int) myDouble;    // Manualmente converteu double para int usando os paranteses com o int
+
+Console.WriteLine(myDouble);   // sobrepoe 9.78
+Console.WriteLine(myInt);      // sobrepoe 9
+------------------------------------------------------------------------------------------
+
+Podemos converter usando os seguintes metódos também:
+
+Console.WriteLine(Convert.ToString(myInt));    // convert int to string
+Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
+Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
+Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
+
+Criar métodos ou funções 
+
+Um método é um bloco de código que contém uma série de instruções. Um programa faz com que as instruções sejam executadas chamando o método e especificando os argumentos de método necessários. No C#, todas as instruções executadas são realizadas no contexto de um método.
+
+Ex:
+Criando um método dentro da classe program
+
+class Program
+{
+  static void MyMethod() 
+  {
+    // code to be executed
+  }
+} 
+
+Exemplo explicado:
+
+MyMethod() nome do método
+static significa que que o método pertence a classe program e não é um objeto da classe.
+void singifica que o método não tem um return
+
+Para chamar um método basta colocar o nome dele junto de paranteses
+
+Ex:
+
+{
+  Console.WriteLine("I just got executed!");
+}
+
+static void Main(string[] args)
+{
+  MyMethod();
+}
+
+Dentro de Main o método MyMethod() foi chamado ↟
+
+Criando objetos:
+
+sintaxe:
+
+Nome da classe + nome da variável = new + nome da classe()
+
+
+
+
+
+
