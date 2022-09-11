@@ -1,0 +1,23 @@
+C# é uma linguagem tipada, ou seja, é nescessário especificar os tipos do dados que estão sendo usados, além de ser focada em orientação de objetos
+
+Na criação de variaveis é usado os seguintes tipos de valores:
+
+int = usada para números inteiros como 1, 2, 3, 4, 5, etc... // Integer (whole number)
+double = usada para números com casas decimais como 1.23, 9.99, etc...  // Floating point number
+string = usada para textos como "Hello World" // String
+bool = usada para true e false  // Boolean
+char = usada para apenas uma letra como A, B, C etc.. // Character
+
+Obs: O "float" e o "double" quando usados para criar a variável é nescessário colocar o F no final para o "float" e o D no final para "double"
+
+
+Conversão de tipos em C#:
+
+Isso se chama Type Casting e tem a função de mudar o tipo da variável
+
+Em C# exite duas maneiras de fazer isso:
+
+Maneira implicta(automatica)
+char -> int -> long -> float -> double
+
+edanuededededednverting a larger type to a smaller size typedouble -> float -> long -> int -> char
