@@ -90,8 +90,11 @@ sintaxe:
 
 Nome da classe + nome da variável = new + nome da classe()
 
+M   odificadores de acesso
 
-
+ -public: Atributos e métodos visiveis para todas as classes
+ -private: Atributos e métodos visiveis apenas para a classe one são criados
+ -protected:  Atributos e métodos visiveis em classes onde são criados ou herdados
 
 
 
